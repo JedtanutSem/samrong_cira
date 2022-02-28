@@ -40,3 +40,4 @@ $ catkin_make
 $ sudo usermod -a -G dialout $USER
 การเปลี่ยนแปลงจะมีผลหลังจาก Log Out โปรด Log Out หรือ Restart เครื่อง
 ```
+### 5. จัดการ Code เพื่อเลือก IO ของ Arduino
