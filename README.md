@@ -88,7 +88,7 @@ $ sudo usermod -a -G dialout $USER
 * rtsp_url1        = "rtsp://192.168.1.3/live/ch00_0"
 * rtsp_url2        = "rtsp://192.168.1.4/live/ch00_0"
 * serial_port_name = "/dev/ttyACM1"
-* cira_core_path = "/home/tdem/Desktop/Test_park.npj"
+* cira_core_path = "/home/tdem/Desktop/Test_park.npj" (สามารถคลิ๊กขวาที่ไฟล์โปรเจคและเลือก properties จะได้ path อยู่ในหัวข้อ Location)
 * full_screen = 'false'
 
 #### 6.1 ทดสอบความการใช้งานเบื้องต้นของการเริ่มทำงาน Autorun
@@ -103,3 +103,24 @@ $ python cira_autorun.py
 #### 6.2 ตั้งค่าการเริ่มต้นอัตโนมัติเมื่อเปิดเครื่อง
 เปิดหน้าแสดงโปรแกรมทั้งหมดใน Ubuntu อาจเรียกว่า Search your computer หรือ Show application (ขึ้นอยู่กับเวอร์ชันของ Ubuntu) แล้วเรียกหา Startup Applications Preferences จะได้หน้าต่างดังภาพ 
 ![Startup_APP](https://user-images.githubusercontent.com/94428679/155946323-26395d51-0632-4c0d-b8e3-bd28cdb73b4f.png)
+* เลือก Add เพื่อเพิ่มโปรแกรมที่ต้องการจะให้เริ่มต้นเมื่อเปิดเครื่อง
+![Add_startup](https://user-images.githubusercontent.com/94428679/155946614-9394a9bf-f27c-4496-98ab-7ea12d28ec8d.png)
+* Name : ตั้งชื่อตามสะดวก
+* Command : gnome-terminal -e 'python 'home/<ชื่อเครื่อง>/catkin_ws/src/samrong_cira/AutoRun/<ชื่อ Folder เวอร์ชั่นของ Ubuntu ที่ใช้งาน>/cira_autorun.py''
+* Comment : สามารถ comment ได้ตามสะดวก
+
+
+ตัวอย่าง gnome-terminal -e 'python 'home/tdem/catkin_ws/src/samrong_cira/AutoRun/02_Ubuntu16.04/cira_autorun.py'' (สามารถคลิ๊กขวาที่ไฟล์ cira_autorun.py และเลือก properties จะได้ path อยู่ในหัวข้อ Location)
+
+เมื่อตั้งค่าเรียบร้อยให้กด Add และปิดหน้าต่าง Startup Applications Preferences
+
+
+### 7. ตั้งค่า Schedule Reboot
+
+* เปิด Terminal
+```console
+$ sudo apt-get update
+$ sudo apt-get install nano
+$ sudo nano /etc/crontab
+```
+
