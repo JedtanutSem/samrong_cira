@@ -1,0 +1,220 @@
+{
+    "connections": [
+        {
+            "in_id": "{49583106-6003-4e1f-94ba-ced67b687f35}",
+            "in_index": 0,
+            "out_id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "in_index": 0,
+            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
+            "in_index": 0,
+            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{ee903d81-ba64-46f3-ab44-6d1ace5fc5c9}",
+            "in_index": 0,
+            "out_id": "{49583106-6003-4e1f-94ba-ced67b687f35}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{26072ece-bde9-468d-83b5-647c2ce288e5}",
+            "in_index": 0,
+            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{3fbe934a-f138-4555-b7d8-802eba43d95b}",
+            "in_index": 0,
+            "out_id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "in_index": 0,
+            "out_id": "{26072ece-bde9-468d-83b5-647c2ce288e5}",
+            "out_index": 0
+        }
+    ],
+    "nodes": [
+        {
+            "id": "{3fbe934a-f138-4555-b7d8-802eba43d95b}",
+            "model": {
+                "RosPub": {
+                    "topic_name": "cira_send"
+                },
+                "name": "RosPub",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 260.392,
+                "y": 116.64399999999998
+            }
+        },
+        {
+            "id": "{ee903d81-ba64-46f3-ab44-6d1ace5fc5c9}",
+            "model": {
+                "height": 248,
+                "name": "Debug",
+                "output_h": 0,
+                "output_v": 0,
+                "page_index": 0,
+                "payload_h": 0,
+                "payload_v": 27,
+                "width": 325
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 543.3638100000001,
+                "y": -57.848890000000026
+            }
+        },
+        {
+            "id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": -63,
+                "y": -69
+            }
+        },
+        {
+            "id": "{49583106-6003-4e1f-94ba-ced67b687f35}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "data_get = payload['ros_sub']['cira_get']['data']\n//data_arr = []\ndata_arr = data_get.split(\",\")\n\ndata0 = parseInt(data_arr[0])\ndata1 = parseInt(data_arr[1])\ndata2 = parseInt(data_arr[2])\ndata3 = parseInt(data_arr[3])\ndata4 = parseInt(data_arr[4])\ndata5 = parseInt(data_arr[5])\n//payload.io.digital_in.BIT1\n\npayload['io']= {'digital_in':{\"BIT1\":data0,\"BIT2\":data1\n,\"BIT3\":data2,\"BIT4\":data3,\"BIT5\":data4,\"BIT6\":data5}}",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 285.91700000000014,
+                "y": -53.735000000000014
+            }
+        },
+        {
+            "id": "{26072ece-bde9-468d-83b5-647c2ce288e5}",
+            "model": {
+                "name": "AutoRun",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": -229,
+                "y": -63
+            }
+        },
+        {
+            "id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
+            "model": {
+                "RosSub": {
+                    "topic_name": "cira_get"
+                },
+                "name": "RosSub",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 92.126,
+                "y": -65.33099999999999
+            }
+        },
+        {
+            "id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "payload.out1 = 1\npayload.out2 = 1\npayload.out3 = 1\npayload.out4 = 1\npayload.out5 = 1\npayload.out6 = 1",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 38.599,
+                "y": 110.47299999999998
+            }
+        }
+    ],
+    "scene_data": {
+        "flow_view_pos_x": -174.91999000000044,
+        "flow_view_pos_y": -168.22086000000002,
+        "flow_view_zoom_factor": 0.8264462809917359
+    }
+}

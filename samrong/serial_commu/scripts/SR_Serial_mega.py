@@ -22,6 +22,8 @@ get_4 = 0
 get_5 = 0
 get_6 = 0
 
+
+
 def cira_send_clbk(data):
     global get_1,get_2,get_3,get_4,get_5,get_6
     str_get = data.data
@@ -38,10 +40,16 @@ if __name__ == "__main__":
 
     rospy.init_node('read_ser', anonymous=True)
     rospy.Subscriber("cira_send",String, cira_send_clbk)
+    print('\n**************************\n')
+    print('Serial Node Started!!!!')
     pub_in = rospy.Publisher("cira_get",String,queue_size=10)
+    serial_port_name = rospy.get_param("/serial_port_name",'/dev/ttyACM0')
+    print('Serial Port: '+str(serial_port_name))
+    print('\n**************************\n')
+
     rate = rospy.Rate(10) # 10hz
     try:
-        arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+        arduino = serial.Serial(serial_port_name, 9600, timeout=1)
         #rospy.Subscriber('chatter', String, callback)
         #rospy.loginfo("test")
 
@@ -52,10 +60,9 @@ if __name__ == "__main__":
             arduino.write(str)
             data = arduino.readline()[:-2]
 
-            rospy.loginfo(data)
+            #rospy.loginfo(data)
             pub_in.publish(data)
             rate.sleep()
     except Exception as e:
         rospy.loginfo("Serial Fail")
         print e
-

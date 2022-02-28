@@ -9,10 +9,12 @@ import os
 
 
 rospy.init_node('image_converter', anonymous=True)
-image_pub = rospy.Publisher("image_topic_2",Image)
+image_pub = rospy.Publisher("rtsp_2",Image)
+print('\n**************************\n')
+print('RTSP 2 Node Started!!!!')
 bridge = CvBridge()
-
-RTSP_URL = 'rtsp://192.168.1.3/live/ch00_0'
+RTSP_URL = rospy.get_param("/rtsp_url2",'rtsp://192.168.1.3/live/ch00_0') #(ros_param,default_url)
+print('RTSP URL: '+str(RTSP_URL))
 
 os.environ['OPENCV_FFMPEG_CAPTURE_OPTIONS'] = 'rtsp_transport;udp'
 

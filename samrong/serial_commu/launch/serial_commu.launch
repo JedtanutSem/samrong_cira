@@ -1,3 +1,4 @@
 <launch>
   <node pkg="serial_commu" type="SR_Serial_mega.py" name="serial_read" output="screen"/>
+  <param name="serial_port_name" type="str" value='/dev/ttyACM0' />
 </launch>
