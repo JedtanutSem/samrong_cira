@@ -133,3 +133,5 @@ $ sudo nano /etc/crontab
 เมื่อดำเนินการเรียบร้อยให้กด ctrl+o และ enter และ ctrl+x  
 ข้อมูลเพิ่มเติมในการตั้งค่าวันและเวลาสามารถอ่านได้ [ที่นี่](https://linuxhint.com/schedule-reboot-daily-linux/)
 
+## **จากนั้น Restart เครื่องและตรวจสอบการทำงานของ Autorun และ Schedule Reboot จะเริ่มทำงานหลังจาก Restart เครื่อง
+
