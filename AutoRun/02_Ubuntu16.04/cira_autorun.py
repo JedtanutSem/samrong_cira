@@ -6,6 +6,8 @@ import time
 serial_port_name = "/dev/ttyACM1"
 rtsp_url1 = "rtsp://192.168.1.3/live/ch00_0"
 rtsp_url2 = "rtsp://192.168.1.4/live/ch00_0"
+cira_core_path = "/home/tdem/Desktop/Test_park.npj"
+full_screen = 'false'
 
 print('###########  CiRA Autorun ############')
 import getpass
@@ -46,6 +48,6 @@ def run_command(command):
     return rc
 
 # 6 run cira core
-Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib && source /opt/ros/kinetic/setup.bash && source ~/.cira_core_install/cira_libs_ws/install/setup.bash --extend && source ~/robots_ws/devel/setup.bash --extend && export LD_LIBRARY_PATH=$(find /usr/lib -iname nvidia-* -type d 2>&1 | sed "{:q;N;s/\\n/:/g;t q}"):${LD_LIBRARY_PATH} && export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/qt511/lib && while true; do rosrun cira_core_robot cira_core_robot_run _selected:=true _file:=\'/home/wutthikorn/as.npj\' _hide_toolbar:=true _fullscreen:=true; sleep 2s; done ;$SHELL'])
+Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib && source /opt/ros/kinetic/setup.bash && source ~/.cira_core_install/cira_libs_ws/install/setup.bash --extend && source ~/robot_ws/devel/setup.bash --extend && export LD_LIBRARY_PATH=$(find /usr/lib -iname nvidia-* -type d 2>&1 | sed "{:q;N;s/\\n/:/g;t q}"):${LD_LIBRARY_PATH} && export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/qt511/lib && while true; do  rosrun cira_core cira_core_run _selected:=true _file:=%s _hide_toolbar:=true _fullscreen:=%s; sleep 2s; done ;$SHELL'%(cira_core_path,full_screen)])
 time.sleep(2)
 print('####### END #######')
