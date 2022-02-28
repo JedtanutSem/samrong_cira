@@ -25,14 +25,9 @@ $ catkin_make
       * devel 
       * src
         * CMakeLists.txt
+        * Autorun
         * samrong_cira 
-          * CmakeLists.txt
-          * README.md
-          * samrong 
-            * cira_core
-            * Arduino_Ser
-            * rtsp_cam
-            * serial_commu
+        
 ### 3. ติดตั้ง Arduino
 ปฏิบัติตามขั้นตอนการติดตั้ง [Arduino](https://ubuntu.com/tutorials/install-the-arduino-ide#1-overview)
 
@@ -49,6 +44,7 @@ $ sudo usermod -a -G dialout $USER
       * devel 
       * src
         * CMakeLists.txt
+        * Autorun
         * samrong_cira 
           * CmakeLists.txt
           * README.md
@@ -59,5 +55,9 @@ $ sudo usermod -a -G dialout $USER
             * serial_commu
 
 ![Ardui_ser](https://user-images.githubusercontent.com/94428679/155933375-613944cf-bdca-4a5d-ac00-306267734457.png)
+
+เลือก Input Pin และ Output Pin โดยค่าเริ่มต้นจะเป็นดังภาพ
+
+### 6. 
 
 
