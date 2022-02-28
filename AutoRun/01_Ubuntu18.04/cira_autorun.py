@@ -4,7 +4,7 @@ from subprocess import Popen
 import time
 
 
-print('###########  CiRA_ROBOT Autorun ############')
+print('###########  CiRA Autorun ############')
 import getpass
 username = getpass.getuser()
 print('user : ', username)
