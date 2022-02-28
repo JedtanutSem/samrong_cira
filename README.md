@@ -73,6 +73,6 @@ $ sudo usermod -a -G dialout $USER
           * CmakeLists.txt
           * README.md
           * [--AutoRun--]
-          * samrong 
+          * samrong   
 เลือกโฟลเดอร์ตามเวอร์ชั่น Ubuntu ที่ใช้งาน (16.04, 18.04)
 
