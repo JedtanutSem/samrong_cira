@@ -54,6 +54,6 @@ $ sudo usermod -a -G dialout $USER
           * README.md
           * samrong 
             * cira_core
-            * Arduino_Ser
+            * [--Arduino_Ser--]
             * rtsp_cam
             * serial_commu
