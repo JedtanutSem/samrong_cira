@@ -1,7 +1,9 @@
 <launch>
+	<arg name="rtsp_url1" default="rtsp://192.168.1.3/live/ch00_0"/>
+	<arg name="rtsp_url2" default="rtsp://192.168.1.3/live/ch00_0"/>
 	<node pkg="rtsp_cam" type="rtsp_cam1.py" name="rtsp_cam1" output = "screen"/>
 	<node pkg="rtsp_cam" type="rtsp_cam2.py" name="rtsp_cam2" output = "screen"/>
-	<param name="rtsp_url1" type="str" value='rtsp://192.168.1.3/live/ch00_0'/>
-	<param name="rtsp_url2" type="str" value='rtsp://192.168.1.3/live/ch00_0'/>
+	<param name="rtsp_url1" type="str" value='$(arg rtsp_url1)'/>
+	<param name="rtsp_url2" type="str" value='$(arg rtsp_url2)'/>
 	<!--Plese setup the url value for RTSP Camera stream-->
 </launch>

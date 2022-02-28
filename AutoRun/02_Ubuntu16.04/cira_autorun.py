@@ -17,8 +17,12 @@ time.sleep(3)
 Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && roscore'])
 time.sleep(3)
 
-# 2 run usb cam
-Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/.cira_core_install/cira_libs_ws/install/setup.bash --extend && roslaunch usb_cam usb_cam-test.launch cam_ns:="camera" cam_dev:="/dev/video0"  ;$SHELL'])
+# 2 run serial_commu
+Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/robot_ws/devel/setup.bash --extend && roslaunch serial_commu serial_commu.launch serial_port_name:="/dev/ttyACM1"  ;$SHELL'])
+time.sleep(3)
+
+# 2 run rtsp
+Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/robot_ws/devel/setup.bash --extend && roslaunch rtsp_cam rtsp_cam.launch rtsp_url1:="rtsp://192.168.1.3/live/ch00_0" rtsp_url2:="rtsp://192.168.1.3/live/ch00_0"  ;$SHELL'])
 time.sleep(3)
 
 # 5 schedule reboot

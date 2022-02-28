@@ -1,4 +1,5 @@
 <launch>
+  <arg name="serial_port_name" default="/dev/ttyACM0"/>
   <node pkg="serial_commu" type="SR_Serial_mega.py" name="serial_read" output="screen"/>
-  <param name="serial_port_name" type="str" value='/dev/ttyACM0' />
+  <param name="serial_port_name" type="str" value= "$(arg serial_port_name)" />
 </launch>
