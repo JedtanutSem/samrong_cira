@@ -99,3 +99,7 @@ $ cd ~/catkin_ws/src/AutoRun/<ชื่อโฟลเดอร์ Ubuntu ที
 $ python cira_autorun.py
 ```
 หากโปรแกรมเริ่มขึ้นมาโดยอัตโนมัติจึงดำเนินการขั้นตอนต่อไปได้ หากไม่ได้ให้ตรวจสอบตัวแปรข้างต้นที่กล่าวมาอีกครั้ง หากยังพบปัญหาสามารถติดต่อกลับเพื่อแก้ปัญหา
+
+#### 6.2 ตั้งค่าการเริ่มต้นอัตโนมัติเมื่อเปิดเครื่อง
+เปิดหน้าแสดงโปรแกรมทั้งหมดใน Ubuntu อาจเรียกว่า Search your computer หรือ Show application (ขึ้นอยู่กับเวอร์ชันของ Ubuntu) แล้วเรียกหา Startup Applications Preferences จะได้หน้าต่างดังภาพ 
+![Startup_APP](https://user-images.githubusercontent.com/94428679/155946323-26395d51-0632-4c0d-b8e3-bd28cdb73b4f.png)
