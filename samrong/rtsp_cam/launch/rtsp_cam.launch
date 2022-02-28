@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="rtsp_cam" type="rtsp_cam1.py" name="rtsp_cam1" output = "screen"/>
+	<node pkg="rtsp_cam" type="rtsp_cam2.py" name="rtsp_cam2" output = "screen"/>
+</launch>
