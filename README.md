@@ -15,6 +15,8 @@ $ catkin_make
 ```console
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/JedtanutSem/samrong_cira.git
+$ cd ~/catkin_ws/
+$ catkin_make
 ```
 โปรดตรวจสอบโฟลเดอร์ต้องปรากฏดังนี้
   * Home
@@ -30,4 +32,11 @@ $ git clone https://github.com/JedtanutSem/samrong_cira.git
             * cira_core
             * rtsp_cam
             * serial_commu
-  
+### 3. ติดตั้ง Arduino
+ปฏิบัติตามขั้นตอนการติดตั้ง [Arduino](https://ubuntu.com/tutorials/install-the-arduino-ide#1-overview)
+
+### 4. เปลี่ยน Permission ของ Arduino Com Port
+```console
+$ sudo usermod -a -G dialout $USER
+การเปลี่ยนแปลงจะมีผลหลังจาก Log Out โปรด Log Out หรือ Restart เครื่อง
+```
