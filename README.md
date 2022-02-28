@@ -123,4 +123,10 @@ $ sudo apt-get update
 $ sudo apt-get install nano
 $ sudo nano /etc/crontab
 ```
+เมื่อรันคำสั่งจะได้หน้าต่างดังภาพ
+![crontab](https://user-images.githubusercontent.com/94428679/155951778-b5f3510e-3dc4-4b32-b5a2-237dda4ff598.png)
+
+ให้ใส่ข้อความนี้ลงไปที่บรรทัดสุดท้าย โดยการใชปุ่มลูกศรเลื่อนเคอร์เซอร์ลงไปที่บรรทัดสุดท้าย
+00 12 * * * root reboot (คอมพิวเตอร์จะ Reboot ทุก 12.00 น.)  
+ข้อมูลเพิ่มเติมในการตั้งค่าวันและเวลาสามารถอ่านได้ [ที่นี่](https://linuxhint.com/schedule-reboot-daily-linux/)
 
