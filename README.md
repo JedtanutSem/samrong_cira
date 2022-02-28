@@ -57,3 +57,7 @@ $ sudo usermod -a -G dialout $USER
             * [--Arduino_Ser--]
             * rtsp_cam
             * serial_commu
+
+![Ardui_ser](https://user-images.githubusercontent.com/94428679/155933375-613944cf-bdca-4a5d-ac00-306267734457.png)
+
+
