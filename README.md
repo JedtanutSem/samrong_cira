@@ -117,8 +117,9 @@ $ python cira_autorun.py
 
 ### 7. ตั้งค่า Schedule Reboot
 
-* เปิด Terminal
+* เปิด Terminal ใหม่
 ```console
+$ cd
 $ sudo apt-get update
 $ sudo apt-get install nano
 $ sudo nano /etc/crontab
