@@ -1,27 +1,9 @@
 {
     "connections": [
         {
-            "in_id": "{26072ece-bde9-468d-83b5-647c2ce288e5}",
+            "in_id": "{dc8f492e-38c9-4293-bbce-31fee80483cd}",
             "in_index": 0,
-            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
-            "out_index": 0
-        },
-        {
-            "in_id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
-            "in_index": 0,
-            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
-            "out_index": 0
-        },
-        {
-            "in_id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
-            "in_index": 0,
-            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
-            "out_index": 0
-        },
-        {
-            "in_id": "{3fbe934a-f138-4555-b7d8-802eba43d95b}",
-            "in_index": 0,
-            "out_id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "out_id": "{5dbea6a8-e06c-4dcd-9159-e05383b6e5de}",
             "out_index": 0
         },
         {
@@ -31,13 +13,511 @@
             "out_index": 0
         },
         {
+            "in_id": "{508c2328-3294-489e-be74-6acbb7b2fc1c}",
+            "in_index": 0,
+            "out_id": "{752ecc8d-9b6a-4d20-ba56-8bc3db947a5a}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "in_index": 0,
+            "out_id": "{4b150bc7-c480-4817-81d8-3bb08652aa69}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{eaf01904-4131-47cf-9411-99b77c3cc2cd}",
+            "in_index": 0,
+            "out_id": "{03ad9aab-1622-4400-afb1-734e6007a616}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{ee4017d0-678f-43fa-b142-4e75b245681a}",
+            "in_index": 0,
+            "out_id": "{d01f0194-0b88-4c58-9635-8d0c9de411f0}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{26072ece-bde9-468d-83b5-647c2ce288e5}",
+            "in_index": 0,
+            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{70688154-3467-426a-9d6a-44b500143d86}",
+            "in_index": 0,
+            "out_id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{a7034471-5262-40f1-a73d-adb36402a7bd}",
+            "in_index": 0,
+            "out_id": "{457dbb39-b357-4ec0-ad97-695e501411d0}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{457dbb39-b357-4ec0-ad97-695e501411d0}",
+            "in_index": 0,
+            "out_id": "{edef76ed-d7a3-4bc4-92ff-a5842426d4b0}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{3fbe934a-f138-4555-b7d8-802eba43d95b}",
+            "in_index": 0,
+            "out_id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{37e8f143-7f99-4897-a7e2-aa848d41850e}",
+            "in_index": 0,
+            "out_id": "{eaf01904-4131-47cf-9411-99b77c3cc2cd}",
+            "out_index": 0
+        },
+        {
             "in_id": "{ee903d81-ba64-46f3-ab44-6d1ace5fc5c9}",
             "in_index": 0,
+            "out_id": "{49583106-6003-4e1f-94ba-ced67b687f35}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{03ad9aab-1622-4400-afb1-734e6007a616}",
+            "in_index": 0,
+            "out_id": "{5dbea6a8-e06c-4dcd-9159-e05383b6e5de}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{9cfb5f08-38b3-48d5-b734-318887bfe97f}",
+            "in_index": 0,
+            "out_id": "{508c2328-3294-489e-be74-6acbb7b2fc1c}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{49583106-6003-4e1f-94ba-ced67b687f35}",
+            "in_index": 0,
             "out_id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
+            "in_index": 0,
+            "out_id": "{304512d9-df01-4b20-b3fd-2fac90aeed1e}",
             "out_index": 0
         }
     ],
     "nodes": [
+        {
+            "id": "{37e8f143-7f99-4897-a7e2-aa848d41850e}",
+            "model": {
+                "RosPub": {
+                    "topic_name": "cira_send"
+                },
+                "name": "RosPub",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Serial Send Data",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1825.9781445347198,
+                "y": 657.4896553706202
+            }
+        },
+        {
+            "id": "{508c2328-3294-489e-be74-6acbb7b2fc1c}",
+            "model": {
+                "delay_time": 2000,
+                "name": "Delay",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Hold signal",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1557.9335071400005,
+                "y": 277.6853066799999
+            }
+        },
+        {
+            "id": "{03ad9aab-1622-4400-afb1-734e6007a616}",
+            "model": {
+                "delay_time": 2000,
+                "name": "Delay",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Hold signal",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1530.2405281399992,
+                "y": 774.4075856799993
+            }
+        },
+        {
+            "id": "{5a849799-9471-4ee3-9c43-f71fb568c764}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "loop",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"|\\n|\\nV\"",
+                    "size": 25,
+                    "tab_index": 1,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 151,
+                "name": "Text",
+                "width": 36
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 1575.584798006383,
+                "y": 433.56240165050593
+            }
+        },
+        {
+            "id": "{4b150bc7-c480-4817-81d8-3bb08652aa69}",
+            "model": {
+                "flow_data_name": "loop",
+                "name": "FlowDataGet"
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 1352.9616328886164,
+                "y": -38.22419634787002
+            }
+        },
+        {
+            "id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "payload.out1 = 1\npayload.out2 = 1\npayload.out3 = 1\npayload.out4 = 1\npayload.out5 = 1\npayload.out6 = 1",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Output Name Map",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1519.892192367964,
+                "y": -39.91772472459104
+            }
+        },
+        {
+            "id": "{70688154-3467-426a-9d6a-44b500143d86}",
+            "model": {
+                "flow_data_name": "loop",
+                "name": "FlowDataSet"
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": -466.55889059999924,
+                "y": 332.7178962799994
+            }
+        },
+        {
+            "id": "{a3ce69cb-1574-4030-b7b7-18eaffec9a87}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "loop",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"|\\n|\\nV\"",
+                    "size": 25,
+                    "tab_index": 1,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 151,
+                "name": "Text",
+                "width": 36
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 505.3025269063819,
+                "y": 415.6391439505052
+            }
+        },
+        {
+            "id": "{304512d9-df01-4b20-b3fd-2fac90aeed1e}",
+            "model": {
+                "flow_data_name": "loop",
+                "name": "FlowDataGet"
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 231.11989780000044,
+                "y": -32.2409461
+            }
+        },
+        {
+            "id": "{7969e088-9530-4a99-ac86-6cff5cc24673}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"|\\n|\\nV\"",
+                    "size": 25,
+                    "tab_index": 0,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 1539,
+                "name": "Text",
+                "width": 26
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 1089.0981024940877,
+                "y": -404.8110136960621
+            }
+        },
+        {
+            "id": "{13bab38a-4b86-4819-aac9-35973ec778a2}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "loop",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"Serial Receive นำสองกล่องนี้แทนที่กล่อง Read IO\"",
+                    "size": 25,
+                    "tab_index": 1,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 228,
+                "name": "Text",
+                "width": 235
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 392.8494979013003,
+                "y": -332.54168013219993
+            }
+        },
+        {
+            "id": "{d01f0194-0b88-4c58-9635-8d0c9de411f0}",
+            "model": {
+                "name": "ReadIO",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Read Arduino",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 422.734125699999,
+                "y": 293.62418019999944
+            }
+        },
+        {
+            "id": "{a7034471-5262-40f1-a73d-adb36402a7bd}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "var obj_cnts = payload.io.digital_in\n\nvar ok = false\n\n\nif(payload.io.digital_in.BIT1 == 0 ||\n payload.io.digital_in.BIT2 == 0 ||\n payload.io.digital_in.BIT3 == 0 ||\n payload.io.digital_in.BIT4 == 0 \n )\n{\n   ok = true\n}\n\nifelse = ok",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "IfElse",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Trigger",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 687.668621745453,
+                "y": 673.8528792727247
+            }
+        },
+        {
+            "id": "{457dbb39-b357-4ec0-ad97-695e501411d0}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "data_get = payload['ros_sub']['cira_get']['data']\n//data_arr = []\ndata_arr = data_get.split(\",\")\n\ndata0 = parseInt(data_arr[0])\ndata1 = parseInt(data_arr[1])\ndata2 = parseInt(data_arr[2])\ndata3 = parseInt(data_arr[3])\ndata4 = parseInt(data_arr[4])\ndata5 = parseInt(data_arr[5])\n//payload.io.digital_in.BIT1\n\npayload['io']= {'digital_in':{\"BIT1\":data0,\"BIT2\":data1\n,\"BIT3\":data2,\"BIT4\":data3,\"BIT5\":data4,\"BIT6\":data5}}",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "IO Name Map",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 547.0568021999999,
+                "y": 673.3854633999989
+            }
+        },
+        {
+            "id": "{3fbe934a-f138-4555-b7d8-802eba43d95b}",
+            "model": {
+                "RosPub": {
+                    "topic_name": "cira_send"
+                },
+                "name": "RosPub",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Serial Send Data",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1683.7621205347218,
+                "y": -38.75947562937904
+            }
+        },
+        {
+            "id": "{edef76ed-d7a3-4bc4-92ff-a5842426d4b0}",
+            "model": {
+                "RosSub": {
+                    "topic_name": "cira_get"
+                },
+                "name": "RosSub",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Serial Receive Data",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 395.13125219999915,
+                "y": 673.5176633999987
+            }
+        },
+        {
+            "id": "{ee903d81-ba64-46f3-ab44-6d1ace5fc5c9}",
+            "model": {
+                "height": 158,
+                "name": "Debug",
+                "output_h": 0,
+                "output_v": 0,
+                "page_index": 0,
+                "payload_h": 0,
+                "payload_v": 0,
+                "width": 219
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 747.092944196241,
+                "y": -39.73245781063463
+            }
+        },
         {
             "id": "{cc8db32f-4f54-44b4-af74-f992f155c908}",
             "model": {
@@ -63,31 +543,37 @@
                 }
             },
             "position": {
-                "x": -63,
-                "y": -69
+                "x": -620.3330905999992,
+                "y": 333.9946962799994
             }
         },
         {
-            "id": "{ee903d81-ba64-46f3-ab44-6d1ace5fc5c9}",
+            "id": "{ee4017d0-678f-43fa-b142-4e75b245681a}",
             "model": {
-                "height": 248,
-                "name": "Debug",
-                "output_h": 0,
-                "output_v": 0,
-                "page_index": 0,
-                "payload_h": 0,
-                "payload_v": 0,
-                "width": 325
+                "data": {
+                    "console": "",
+                    "js_code": "var obj_cnts = payload.io.digital_in\n\nvar ok = false\n\n\nif(payload.io.digital_in.BIT1 == 0 ||\n payload.io.digital_in.BIT2 == 0 ||\n payload.io.digital_in.BIT3 == 0 ||\n payload.io.digital_in.BIT4 == 0 \n )\n{\n   ok = true\n}\n\nifelse = ok",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "IfElse",
+                "node_enable": true
             },
             "ngo": {
                 "comment": {
-                    "data": "",
-                    "show": false
+                    "data": "Trigger",
+                    "show": true
                 }
             },
             "position": {
-                "x": 372.02781000000004,
-                "y": -62.809890000000024
+                "x": 588.1686217454554,
+                "y": 292.263389272727
             }
         },
         {
@@ -103,32 +589,12 @@
                 }
             },
             "position": {
-                "x": -229,
-                "y": -63
+                "x": -788.4766794099992,
+                "y": 339.9946962799994
             }
         },
         {
-            "id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
-            "model": {
-                "RosSub": {
-                    "topic_name": "cira_get"
-                },
-                "name": "RosSub",
-                "node_enable": true
-            },
-            "ngo": {
-                "comment": {
-                    "data": "",
-                    "show": false
-                }
-            },
-            "position": {
-                "x": 164,
-                "y": -64
-            }
-        },
-        {
-            "id": "{4e0171b7-bc52-4043-97bc-4e63f62fc8ea}",
+            "id": "{5dbea6a8-e06c-4dcd-9159-e05383b6e5de}",
             "model": {
                 "data": {
                     "console": "",
@@ -147,17 +613,17 @@
             },
             "ngo": {
                 "comment": {
-                    "data": "",
-                    "show": false
+                    "data": "Output Name Map",
+                    "show": true
                 }
             },
             "position": {
-                "x": 38.599,
-                "y": 110.47299999999998
+                "x": 1306.0244553679627,
+                "y": 656.3314062754081
             }
         },
         {
-            "id": "{3fbe934a-f138-4555-b7d8-802eba43d95b}",
+            "id": "{dc8f492e-38c9-4293-bbce-31fee80483cd}",
             "model": {
                 "RosPub": {
                     "topic_name": "cira_send"
@@ -167,19 +633,242 @@
             },
             "ngo": {
                 "comment": {
+                    "data": "Serial Send Data",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1499.1763835347206,
+                "y": 657.4896553706201
+            }
+        },
+        {
+            "id": "{49583106-6003-4e1f-94ba-ced67b687f35}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "data_get = payload['ros_sub']['cira_get']['data']\n//data_arr = []\ndata_arr = data_get.split(\",\")\n\ndata0 = parseInt(data_arr[0])\ndata1 = parseInt(data_arr[1])\ndata2 = parseInt(data_arr[2])\ndata3 = parseInt(data_arr[3])\ndata4 = parseInt(data_arr[4])\ndata5 = parseInt(data_arr[5])\n//payload.io.digital_in.BIT1\n\npayload['io']= {'digital_in':{\"BIT1\":data0,\"BIT2\":data1\n,\"BIT3\":data2,\"BIT4\":data3,\"BIT5\":data4,\"BIT6\":data5}}",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "IO Name Map",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 590.0954878000005,
+                "y": -32.021936100000005
+            }
+        },
+        {
+            "id": "{5991a087-4ed4-4e65-94ee-967408fee272}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "loop",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"ตัวอย่าง\"",
+                    "size": 25,
+                    "tab_index": 1,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 82,
+                "name": "Text",
+                "width": 149
+            },
+            "ngo": {
+                "comment": {
                     "data": "",
                     "show": false
                 }
             },
             "position": {
-                "x": 175.692,
-                "y": 111.804
+                "x": 1512.5805540063848,
+                "y": 136.17149865050652
+            }
+        },
+        {
+            "id": "{9cfb5f08-38b3-48d5-b734-318887bfe97f}",
+            "model": {
+                "name": "WriteOutput",
+                "node_enable": true,
+                "write_do": {
+                    "do": "OK:0,"
+                }
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 1697.4352581399999,
+                "y": 277.25410167999934
+            }
+        },
+        {
+            "id": "{eaf01904-4131-47cf-9411-99b77c3cc2cd}",
+            "model": {
+                "data": {
+                    "console": "",
+                    "js_code": "payload.out1 = 0\npayload.out2 = 1\npayload.out3 = 1\npayload.out4 = 1\npayload.out5 = 1\npayload.out6 = 1",
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "name": "JavaScript",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Output Name Map",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1662.108216367962,
+                "y": 656.3314062754083
+            }
+        },
+        {
+            "id": "{1a15d62f-6ba5-4b48-8427-91420ee99650}",
+            "model": {
+                "RosSub": {
+                    "topic_name": "cira_get"
+                },
+                "name": "RosSub",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "Serial Receive Data",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 426.06993779999993,
+                "y": -31.889736099999993
+            }
+        },
+        {
+            "id": "{9fd6b57c-ecbe-4c0f-a8a7-2d548708a9d4}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "loop",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"Serial Receive นำสองกล่องนี้แทนที่กล่อง Write Output\"",
+                    "size": 25,
+                    "tab_index": 1,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 228,
+                "name": "Text",
+                "width": 235
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 1455.8320317663852,
+                "y": -349.7384089894934
+            }
+        },
+        {
+            "id": "{dc601c88-2068-40bd-832d-9eee7c6c25dd}",
+            "model": {
+                "data": {
+                    "bold": false,
+                    "console": "",
+                    "flow_data": "loop",
+                    "font": "Ubuntu",
+                    "js_code": "text = \"ตัวอย่าง\"",
+                    "size": 25,
+                    "tab_index": 1,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    }
+                },
+                "height": 82,
+                "name": "Text",
+                "width": 149
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 443.5239508363844,
+                "y": 140.47912985050633
+            }
+        },
+        {
+            "id": "{752ecc8d-9b6a-4d20-ba56-8bc3db947a5a}",
+            "model": {
+                "name": "WriteOutput",
+                "node_enable": true,
+                "write_do": {
+                    "do": "OK:1,"
+                }
+            },
+            "ngo": {
+                "comment": {
+                    "data": "OK signal",
+                    "show": true
+                }
+            },
+            "position": {
+                "x": 1392.9382511399997,
+                "y": 277.43892367999973
             }
         }
     ],
     "scene_data": {
-        "flow_view_pos_x": 136.53400999999974,
-        "flow_view_pos_y": -95.0158599999999,
-        "flow_view_zoom_factor": 0.7513148009015778
+        "flow_view_pos_x": 34.37636888666691,
+        "flow_view_pos_y": -444.8645160364879,
+        "flow_view_zoom_factor": 0.513158118230707
     }
 }
