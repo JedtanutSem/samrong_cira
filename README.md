@@ -25,8 +25,11 @@ $ catkin_make
       * devel 
       * src
         * CMakeLists.txt
-        * Autorun
         * samrong_cira 
+          * CmakeLists.txt
+          * README.md
+          * Autorun
+          * samrong
         
 ### 3. ติดตั้ง Arduino
 ปฏิบัติตามขั้นตอนการติดตั้ง [Arduino](https://ubuntu.com/tutorials/install-the-arduino-ide#1-overview)
@@ -44,10 +47,10 @@ $ sudo usermod -a -G dialout $USER
       * devel 
       * src
         * CMakeLists.txt
-        * Autorun
         * samrong_cira 
           * CmakeLists.txt
           * README.md
+          * Autorun
           * samrong 
             * cira_core
             * [--Arduino_Ser--]
