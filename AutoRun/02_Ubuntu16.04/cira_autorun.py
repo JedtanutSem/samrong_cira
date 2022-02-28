@@ -3,6 +3,9 @@ from urllib import unquote
 from subprocess import Popen
 import time
 
+serial_port_name = "/dev/ttyACM1"
+rtsp_url1 = "rtsp://192.168.1.3/live/ch00_0"
+rtsp_url2 = "rtsp://192.168.1.4/live/ch00_0"
 
 print('###########  CiRA Autorun ############')
 import getpass
@@ -18,11 +21,11 @@ Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bas
 time.sleep(3)
 
 # 2 run serial_commu
-Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/robot_ws/devel/setup.bash --extend && roslaunch serial_commu serial_commu.launch serial_port_name:="/dev/ttyACM1"  ;$SHELL'])
+Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/catkin_ws/devel/setup.bash --extend && roslaunch serial_commu serial_commu.launch serial_port_name:=%s  ;$SHELL'%serial_port_name])
 time.sleep(3)
 
-# 2 run rtsp
-Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/robot_ws/devel/setup.bash --extend && roslaunch rtsp_cam rtsp_cam.launch rtsp_url1:="rtsp://192.168.1.3/live/ch00_0" rtsp_url2:="rtsp://192.168.1.3/live/ch00_0"  ;$SHELL'])
+# 3 run rtsp
+Popen(["gnome-terminal", '-x' , 'bash', '-c' ,'source /opt/ros/kinetic/setup.bash && source ~/catkin_ws/devel/setup.bash --extend && roslaunch rtsp_cam rtsp_cam.launch rtsp_url1:=%s rtsp_url2:=%s  ;$SHELL'%(rtsp_url1,rtsp_url2)])
 time.sleep(3)
 
 # 5 schedule reboot
