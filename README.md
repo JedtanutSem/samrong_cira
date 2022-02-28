@@ -28,7 +28,7 @@ $ catkin_make
         * samrong_cira 
           * CmakeLists.txt
           * README.md
-          * Autorun
+          * AutoRun
           * samrong
         
 ### 3. ติดตั้ง Arduino
@@ -50,7 +50,7 @@ $ sudo usermod -a -G dialout $USER
         * samrong_cira 
           * CmakeLists.txt
           * README.md
-          * Autorun
+          * AutoRun
           * samrong 
             * cira_core
             * [--Arduino_Ser--]
@@ -62,5 +62,17 @@ $ sudo usermod -a -G dialout $USER
 เลือก Input Pin และ Output Pin โดยค่าเริ่มต้นจะเป็นดังภาพ
 
 ### 6. ตั้งค่าเริ่มต้นโปรแกรมอัตโนมัติเมื่อเปิดเครื่อง
-
+แก้ไขไฟล์ในโฟลเดอร์ Autorun 
+* Home
+    * catkin_ws
+      * build
+      * devel 
+      * src
+        * CMakeLists.txt
+        * samrong_cira 
+          * CmakeLists.txt
+          * README.md
+          * [--AutoRun--]
+          * samrong 
+เลือกโฟลเดอร์ตามเวอร์ชั่น Ubuntu ที่ใช้งาน (16.04, 18.04)
 
