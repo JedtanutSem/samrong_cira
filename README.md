@@ -1,5 +1,5 @@
 # CiRA CORE Serial and RTSP Camera Autorun
-โปรดปฏิบัติตามขั้นตอนและเชื่อมต่ออินเทอร์เน็ตขณะติดตั้ง
+โปรดปฏิบัติตามขั้นตอนและเชื่อมต่ออินเทอร์เน็ตขณะติดตั้ง และตั้งนาฬิกาของคอมพิวเตอร์ให้ตรงตามเวลาจริง
 ## อุปกรณ์ที่จำเป็น
 1. Arduino Mega
 2. RTSP Camera
@@ -94,8 +94,8 @@ $ sudo usermod -a -G dialout $USER
 #### 6.1 ทดสอบความการใช้งานเบื้องต้นของการเริ่มทำงาน Autorun
 
 ```console
-$ cd ~/catkin_ws/src/AutoRun/<ชื่อโฟลเดอร์ Ubuntu ที่ใช้งาน>
-ตัวอย่าง : $ cd ~/catkin_ws/src/AutoRun/02_Ubuntu16.04
+$ cd ~/catkin_ws/src/samrong_cira/AutoRun/<ชื่อโฟลเดอร์ Ubuntu ที่ใช้งาน>
+ตัวอย่าง : $ cd ~/catkin_ws/src/samrong_cira/AutoRun/02_Ubuntu16.04
 $ python cira_autorun.py
 ```
 หากโปรแกรมเริ่มขึ้นมาโดยอัตโนมัติจึงดำเนินการขั้นตอนต่อไปได้ หากไม่ได้ให้ตรวจสอบตัวแปรข้างต้นที่กล่าวมาอีกครั้ง หากยังพบปัญหาสามารถติดต่อกลับเพื่อแก้ปัญหา
@@ -104,21 +104,24 @@ $ python cira_autorun.py
 เปิดหน้าแสดงโปรแกรมทั้งหมดใน Ubuntu อาจเรียกว่า Search your computer หรือ Show application (ขึ้นอยู่กับเวอร์ชันของ Ubuntu) แล้วเรียกหา Startup Applications Preferences จะได้หน้าต่างดังภาพ 
 ![Startup_APP](https://user-images.githubusercontent.com/94428679/155946323-26395d51-0632-4c0d-b8e3-bd28cdb73b4f.png)
 * เลือก Add เพื่อเพิ่มโปรแกรมที่ต้องการจะให้เริ่มต้นเมื่อเปิดเครื่อง
+
+
 ![Add_startup](https://user-images.githubusercontent.com/94428679/155946614-9394a9bf-f27c-4496-98ab-7ea12d28ec8d.png)
 * Name : ตั้งชื่อตามสะดวก
-* Command : gnome-terminal -e 'python 'home/<ชื่อเครื่อง>/catkin_ws/src/samrong_cira/AutoRun/<ชื่อ Folder เวอร์ชั่นของ Ubuntu ที่ใช้งาน>/cira_autorun.py''
+* Command : gnome-terminal -e 'python '/home/<ชื่อเครื่อง>/catkin_ws/src/samrong_cira/AutoRun/<ชื่อ Folder เวอร์ชั่นของ Ubuntu ที่ใช้งาน>/cira_autorun.py''
 * Comment : สามารถ comment ได้ตามสะดวก
 
 
-ตัวอย่าง gnome-terminal -e 'python 'home/tdem/catkin_ws/src/samrong_cira/AutoRun/02_Ubuntu16.04/cira_autorun.py'' (สามารถคลิ๊กขวาที่ไฟล์ cira_autorun.py และเลือก properties จะได้ path อยู่ในหัวข้อ Location)
+ตัวอย่าง gnome-terminal -e 'python '/home/tdem/catkin_ws/src/samrong_cira/AutoRun/02_Ubuntu16.04/cira_autorun.py'' (สามารถคลิ๊กขวาที่ไฟล์ cira_autorun.py และเลือก properties จะได้ path อยู่ในหัวข้อ Location)
 
 เมื่อตั้งค่าเรียบร้อยให้กด Add และปิดหน้าต่าง Startup Applications Preferences
 
 
 ### 7. ตั้งค่า Schedule Reboot
 
-* เปิด Terminal
+* เปิด Terminal ใหม่
 ```console
+$ cd
 $ sudo apt-get update
 $ sudo apt-get install nano
 $ sudo nano /etc/crontab
