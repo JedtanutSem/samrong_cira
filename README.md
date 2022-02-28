@@ -14,6 +14,20 @@ $ catkin_make
 ### 2. ดาวน์โหลด Package
 ```console
 $ cd ~/catkin_ws/src
-$ git clone
-$ catkin_make
+$ git clone https://github.com/JedtanutSem/samrong_cira.git
 ```
+โปรดตรวจสอบโฟลเดอร์ต้องปรากฏดังนี้
+  * Home
+    * catkin_ws
+      * build
+      * devel 
+      * src
+        * CMakeLists.txt
+        * samrong_cira 
+          * CmakeLists.txt
+          * README.md
+          * samrong 
+            * cira_core
+            * rtsp_cam
+            * serial_commu
+  
