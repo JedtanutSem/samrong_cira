@@ -108,11 +108,11 @@ $ python cira_autorun.py
 
 ![Add_startup](https://user-images.githubusercontent.com/94428679/155946614-9394a9bf-f27c-4496-98ab-7ea12d28ec8d.png)
 * Name : ตั้งชื่อตามสะดวก
-* Command : gnome-terminal -e 'python 'home/<ชื่อเครื่อง>/catkin_ws/src/samrong_cira/AutoRun/<ชื่อ Folder เวอร์ชั่นของ Ubuntu ที่ใช้งาน>/cira_autorun.py''
+* Command : gnome-terminal -e 'python '/home/<ชื่อเครื่อง>/catkin_ws/src/samrong_cira/AutoRun/<ชื่อ Folder เวอร์ชั่นของ Ubuntu ที่ใช้งาน>/cira_autorun.py''
 * Comment : สามารถ comment ได้ตามสะดวก
 
 
-ตัวอย่าง gnome-terminal -e 'python 'home/tdem/catkin_ws/src/samrong_cira/AutoRun/02_Ubuntu16.04/cira_autorun.py'' (สามารถคลิ๊กขวาที่ไฟล์ cira_autorun.py และเลือก properties จะได้ path อยู่ในหัวข้อ Location)
+ตัวอย่าง gnome-terminal -e 'python '/home/tdem/catkin_ws/src/samrong_cira/AutoRun/02_Ubuntu16.04/cira_autorun.py'' (สามารถคลิ๊กขวาที่ไฟล์ cira_autorun.py และเลือก properties จะได้ path อยู่ในหัวข้อ Location)
 
 เมื่อตั้งค่าเรียบร้อยให้กด Add และปิดหน้าต่าง Startup Applications Preferences
 
