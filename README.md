@@ -30,6 +30,7 @@ $ catkin_make
           * README.md
           * samrong 
             * cira_core
+            * Arduino_Ser
             * rtsp_cam
             * serial_commu
 ### 3. ติดตั้ง Arduino
@@ -41,3 +42,18 @@ $ sudo usermod -a -G dialout $USER
 การเปลี่ยนแปลงจะมีผลหลังจาก Log Out โปรด Log Out หรือ Restart เครื่อง
 ```
 ### 5. จัดการ Code เพื่อเลือก IO ของ Arduino
+ไฟล์โค้ดจะอยู่ในโฟลเดอร์ [Arduino_Ser](https://github.com/JedtanutSem/samrong_cira/tree/main/samrong/Arduino_Ser)
+* Home
+    * catkin_ws
+      * build
+      * devel 
+      * src
+        * CMakeLists.txt
+        * samrong_cira 
+          * CmakeLists.txt
+          * README.md
+          * samrong 
+            * cira_core
+            * Arduino_Ser
+            * rtsp_cam
+            * serial_commu
