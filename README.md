@@ -104,6 +104,8 @@ $ python cira_autorun.py
 เปิดหน้าแสดงโปรแกรมทั้งหมดใน Ubuntu อาจเรียกว่า Search your computer หรือ Show application (ขึ้นอยู่กับเวอร์ชันของ Ubuntu) แล้วเรียกหา Startup Applications Preferences จะได้หน้าต่างดังภาพ 
 ![Startup_APP](https://user-images.githubusercontent.com/94428679/155946323-26395d51-0632-4c0d-b8e3-bd28cdb73b4f.png)
 * เลือก Add เพื่อเพิ่มโปรแกรมที่ต้องการจะให้เริ่มต้นเมื่อเปิดเครื่อง
+
+
 ![Add_startup](https://user-images.githubusercontent.com/94428679/155946614-9394a9bf-f27c-4496-98ab-7ea12d28ec8d.png)
 * Name : ตั้งชื่อตามสะดวก
 * Command : gnome-terminal -e 'python 'home/<ชื่อเครื่อง>/catkin_ws/src/samrong_cira/AutoRun/<ชื่อ Folder เวอร์ชั่นของ Ubuntu ที่ใช้งาน>/cira_autorun.py''
