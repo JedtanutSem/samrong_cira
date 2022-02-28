@@ -73,6 +73,29 @@ $ sudo usermod -a -G dialout $USER
           * CmakeLists.txt
           * README.md
           * [--AutoRun--]
-          * samrong   
-เลือกโฟลเดอร์ตามเวอร์ชั่น Ubuntu ที่ใช้งาน (16.04, 18.04)
+          * samrong  
 
+
+
+เลือกโฟลเดอร์ตามเวอร์ชั่น Ubuntu ที่ใช้งาน (16.04, 18.04) และเข้าไปแก้ไขในไฟล์ cira_autorun.py จะมีตัวแปร 
+* rtsp_url1 (ที่อยู่ url ของกล้องตัวที่ 1)
+* rtsp_url2 (ที่อยู่ url ของกล้องตัวที่ 2)
+* serial_port_name (ชื่อ com port ของ Arduino)
+* cira_core_path  (ที่อยู่ของไฟล์ .npj [ไฟล์โปรเจค] cira core) 
+ 
+ให้แก้ไขให้ตรงกับหน้างานที่ใช้งานโดยจะมีค่า Default ดังนี้
+
+* rtsp_url1        = "rtsp://192.168.1.3/live/ch00_0"
+* rtsp_url2        = "rtsp://192.168.1.4/live/ch00_0"
+* serial_port_name = "/dev/ttyACM1"
+* cira_core_path = "/home/tdem/Desktop/Test_park.npj"
+* full_screen = 'false'
+
+#### 6.1 ทดสอบความการใช้งานเบื้องต้นของการเริ่มทำงาน Autorun
+
+```console
+$ cd ~/catkin_ws/src/AutoRun/<ชื่อโฟลเดอร์ Ubuntu ที่ใช้งาน>
+ตัวอย่าง : $ cd ~/catkin_ws/src/AutoRun/02_Ubuntu16.04
+$ python cira_autorun.py
+```
+หากโปรแกรมเริ่มขึ้นมาโดยอัตโนมัติจึงดำเนินการขั้นตอนต่อไปได้ หากไม่ได้ให้ตรวจสอบตัวแปรข้างต้นที่กล่าวมาอีกครั้ง หากยังพบปัญหาสามารถติดต่อกลับเพื่อแก้ปัญหา
