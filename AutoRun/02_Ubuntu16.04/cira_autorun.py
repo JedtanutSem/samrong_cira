@@ -3,7 +3,7 @@ from urllib import unquote
 from subprocess import Popen
 import time
 
-serial_port_name = "/dev/ttyACM1"
+serial_port_name = "/dev/ttyACM0"
 rtsp_url1 = "rtsp://192.168.1.3/live/ch00_0"
 rtsp_url2 = "rtsp://192.168.1.4/live/ch00_0"
 cira_core_path = "/home/tdem/Desktop/Test_park.npj"
