@@ -31,7 +31,7 @@ $ catkin_make
           * AutoRun
           * samrong
         
-### 3. ติดตั้ง Arduino
+### 3. ติดตั้ง Arduino 
 ปฏิบัติตามขั้นตอนการติดตั้ง [Arduino](https://ubuntu.com/tutorials/install-the-arduino-ide#1-overview)
 
 ### 4. เปลี่ยน Permission ของ Arduino Com Port
@@ -80,14 +80,14 @@ $ sudo usermod -a -G dialout $USER
 เลือกโฟลเดอร์ตามเวอร์ชั่น Ubuntu ที่ใช้งาน (16.04, 18.04) และเข้าไปแก้ไขในไฟล์ cira_autorun.py จะมีตัวแปร 
 * rtsp_url1 (ที่อยู่ url ของกล้องตัวที่ 1)
 * rtsp_url2 (ที่อยู่ url ของกล้องตัวที่ 2)
-* serial_port_name (ชื่อ com port ของ Arduino)
+* serial_port_name (ชื่อ com port ของ Arduino สามารถตรวจสอบได้จากโปรแกรม Arduino ที่ได้ติดตั้งในขั้นตอนที่ 3)
 * cira_core_path  (ที่อยู่ของไฟล์ .npj [ไฟล์โปรเจค] cira core) 
  
 ให้แก้ไขให้ตรงกับหน้างานที่ใช้งานโดยจะมีค่า Default ดังนี้
 
 * rtsp_url1        = "rtsp://192.168.1.3/live/ch00_0"
 * rtsp_url2        = "rtsp://192.168.1.4/live/ch00_0"
-* serial_port_name = "/dev/ttyACM1"
+* serial_port_name = "/dev/ttyACM0"
 * cira_core_path = "/home/tdem/Desktop/Test_park.npj" (สามารถคลิ๊กขวาที่ไฟล์โปรเจคและเลือก properties จะได้ path อยู่ในหัวข้อ Location)
 * full_screen = 'false'
 
